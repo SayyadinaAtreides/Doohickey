@@ -1,0 +1,2 @@
+([0-9]{1,4}) to maximum Energy Shield\n
+([0-9]{1,4})\% increased Mana Regeneration Rate\n

@@ -1,0 +1,261 @@
+//Defense mods
+([0-9]{1,4})\% increased Armour\n
+([0-9]{1,4}) to Armour\n
+([0-9]{1,4})\% increased Evasion Rating\n
+([0-9]{1,4}) to Evasion Rating\n
+([0-9]{1,4})\% increased Energy Shield\n
+([0-9]{1,4}) to maximum Energy Shield\n
+([0-9]{1,4})\% increased Global Defences
+
+([0-9]{1,4})\% increased Evasion and Energy Shield\n
+([0-9]{1,4})\% increased Armour and Energy Shield\n
+([0-9]{1,4})\% increased Armour and Evasion
+
+
+
+//Life and Mana mods
+([0-9]{1,4})\% increased maximum Life\n
+\+([0-9]{1,4}) to maximum Life\n
+([0-9]{1,4}|[0-9]{1,2}\.[0-9]{1}) Life Regenerated per second\n
+\+([0-9]{1,4}) Life gained for each Enemy hit by Attacks\n
+([0-9]{1,4}|[0-9]{1,2}\.[0-9]{1}) Life Regenerated per second per Endurance Charge\n
+Lose ([0-9]{1,4}) Life for each Enemy hit by your Spells\n
+Lose ([0-9]{1,4}) Life for each Enemy hit by your Attacks\n
+
+([0-9]{1,4})\% increased maximum Mana\n
+\+([0-9]{1,4}) to maximum Mana\n
+([0-9]{1,4})\% increased Mana Regeneration Rate\n
+([0-9]{1,4}|[0-9]{1,2}\.[0-9]{1}) Mana Regenerated per second\n
+([0-9]{1,4})\% of Damage taken gained as Mana over 4 seconds when Hit\n
+\+([0-9]{1,4}) Mana gained for each Enemy hit by Attacks\n
+
+([0-9]{1,4})\% increased Energy Shield Recovery rate\n
+
+
+//Resistance mods
+\+([0-9]{1,4})\% to all Elemental Resistances\n
+\+([0-9]{1,4})\% to Fire Resistance\n
+\+([0-9]{1,4})\% to Cold Resistance\n
+\+([0-9]{1,4})\% to Lightning Resistance\n
+\+([0-9]{1,4})\% to Chaos Resistance\n
+
+(\-[0-9]{1,4})\% to all Elemental Resistances\n
+
+
+//Attribute mods
+\+([0-9]{1,4}) to all Attributes\n
+\+([0-9]{1,4}) to Strength\n
+\+([0-9]{1,4}) to Dexterity\n
+\+([0-9]{1,4}) to Intelligence\n
+([0-9]{1,4})\% increased Strength\n
+([0-9]{1,4})\% increased Dexterity\n
+([0-9]{1,4})\% increased Intelligence\n
+([0-9]{1,4})\% increased Attributes
+
+\+([0-9]{1,4}) to Dexterity and Intelligence\n
+
+([0-9]{1,4})\% reduced Strength\n
+([0-9]{1,4})\% reduced Dexterity\n
+([0-9]{1,4})\% reduced Intelligence\n
+
+
+
+
+//Accuracy, Block, Dodge, Critical chance and multiplier mods
+([0-9]{1,4})\% increased Critical Strike Chance\n
+([0-9]{1,4})\% increased Critical Strike Chance for Spells\n
+([0-9]{1,4})\% increased Global Critical Strike Chance\n
+
+\+([0-9]{1,4})\% to Melee Critical Strike Multiplier\n
+\+([0-9]{1,4})\% to Global Critical Strike Multiplier\n
+(\-[0-9]{1,4})\% to Global Critical Strike Multiplier\n
+
+\+([0-9]{1,4}) to Accuracy Rating\n
+([0-9]{1,4})\% increased Accuracy Rating\n
+\+([0-9]{1,4}) to Accuracy Rating while at Maximum Frenzy Charges\n
+
+
+\+([0-9]{1,4})\% Chance to Block\n
+([0-9]{1,4})\% Chance to Block\n
+([0-9]{1,4})\% Chance to Block Spells\n
+([0-9]{1,4})\% additional Block Chance while Dual Wielding\n
+([0-9]{1,4})\% additional Block Chance while Dual Wielding Claws\n
+
+([0-9]{1,4})\% reduced Stun and Block Recovery\n
+([0-9]{1,4})\% increased Stun and Block Recovery\n
+
+([0-9]{1,4})\% chance to Dodge Spell Damage\n
+
+
+
+
+
+
+
+//Damage mods
+([0-9]{1,4})\% more Unarmed Physical Damage
+Adds ([0-9]{1,4}) to ([0-9]{1,4}) Fire Damage to Attacks\n
+Adds ([0-9]{1,4}) to ([0-9]{1,4}) Cold Damage to Attacks\n
+Adds ([0-9]{1,4}) to ([0-9]{1,4}) Lightning Damage to Attacks\n
+Adds ([0-9]{1,4}) to ([0-9]{1,4}) Physical Damage to Attacks\n
+Adds ([0-9]{1,4}) to ([0-9]{1,4}) Chaos Damage to Attacks\n
+
+Adds ([0-9]{1,4}) to ([0-9]{1,4}) Fire Damage to Spells\n
+Adds ([0-9]{1,4}) to ([0-9]{1,4}) Cold Damage to Spells\n
+Adds ([0-9]{1,4}) to ([0-9]{1,4}) Lightning Damage to Spells\n
+Adds ([0-9]{1,4}) to ([0-9]{1,4}) Physical Damage to Spells\n
+Adds ([0-9]{1,4}) to ([0-9]{1,4}) Chaos Damage to Spells\n
+
+Adds ([0-9]{1,4}) to ([0-9]{1,4}) Fire Damage\n
+Adds ([0-9]{1,4}) to ([0-9]{1,4}) Cold Damage\n
+Adds ([0-9]{1,4}) to ([0-9]{1,4}) Lightning Damage\n
+Adds ([0-9]{1,4}) to ([0-9]{1,4}) Physical Damage\n
+Adds ([0-9]{1,4}) to ([0-9]{1,4}) Chaos Damage\n
+
+Adds ([0-9]{1,4}) to ([0-9]{1,4}) Physical Damage to Bow Attacks\n
+
+
+([0-9]{1,4})\% increased Damage\n
+([0-9]{1,4})\% increased Physical Damage\n
+([0-9]{1,4})\% increased Global Physical Damage\n
+([0-9]{1,4})\% increased Elemental Damage\n
+([0-9]{1,4})\% increased Spell Damage\n
+([0-9]{1,4})\% increased Fire Damage\n
+([0-9]{1,4})\% increased Cold Damage\n
+([0-9]{1,4})\% increased Lightning Damage\n
+([0-9]{1,4})\% increased Chaos Damage\n
+([0-9]{1,4})\% increased Projectile Damage\n
+([0-9]{1,4})\% increased Area Damage\n
+
+([0-9]{1,4})\% increased Attack Speed\n
+([0-9]{1,4})\% increased Cast Speed\n
+([0-9]{1,4})\% increased Projectile Speed\n
+([0-9]{1,4})\% reduced Attack Speed\n
+([0-9]{1,4})\% reduced Cast Speed \n
+
+([0-9]{1,4})\% increased Damage with Movement Skills\n
+([0-9]{1,4})\% increased Cold Damage with Attack Skills\n
+([0-9]{1,4})\% increased Trap Damage
+([0-9]{1,4})\% increased Elemental Damage with Attack Skills\n
+
+Gain ([0-9]{1,4})\% of Physical Damage as Extra Chaos Damage
+Gain ([0-9]{1,4})\% of Physical Damage as Extra Chaos Damage during effect\n
+Gain ([0-9]{1,4})\% of Physical Damage as Extra Chaos Damage while at maximum Power Charges\n
+Gain ([0-9]{1,4})\% of Elemental Damage as Extra Chaos Damage during effect\n
+Gain ([0-9]{1,4})\% of Physical Damage as Extra Cold Damage
+
+Attacks with this Weapon have ([0-9]{1,4})\% increased Elemental Damage\n
+
+([0-9]{1,4})\% increased Damage while you have no Frenzy Charges\n
+
+Adds ([0-9]{1,4}) to ([0-9]{1,4}) Fire Damage in Main Hand\n
+Adds ([0-9]{1,4}) to ([0-9]{1,4}) Cold Damage in Off Hand\n
+
+([0-9]{1,4})\% increased Damage with Hits and Ailments per Curse on Enemy
+
+
+
+
+//Leech mods
+([0-9]{1,4})\% of Chaos Damage Leeched as Life during Flask effect\n
+
+
+
+//Enemy status effects
+([0-9]{1,4})\% reduced Enemy Stun Threshold\n
+([0-9]{1,4})\% increased Stun Duration on Enemies\n
+([0-9]{1,4})\% chance to Maim on Hit\n
+([0-9]{1,4})\% increased Poison Duration\n
+([0-9]{1,4})\% increased Burning Damage\n
+([0-9]{1,4})\% increased Ignite Duration on Enemies\n
+([0-9]{1,4})\% chance to Ignite\n
+([0-9]{1,4})\% Chill Duration on Enemies\n
+([0-9]{1,4})\% increased Effect of Shock\n
+
+
+//Gem mods
+Socketed Gems deal ([0-9]{1,4}) to ([0-9]{1,4}) additional Fire Damage\n
+
+
+//power/endurance/frenzy charges
+([0-9]{1,4})\% chance to gain a Power Charge on Kill\n
+([0-9]{1,4})\% icnreased Power Charge Duration\n
+
+
+//Personal buffs (onslaught, fortify etc.)
+([0-9]{1,4})\% chance to gain Fortify when you Stun and Enemy with Melee Damage\n
+
+
+
+//Minion Mods
+Minions have ([0-9]{1,4})\% increased Area of Effect\n
+Minions Regenerate ([0-9]{1,4}|[0-9]{1,2}\.[0-9]{1})\% Life per second\n
+([0-9]{1,4})\% increased Minion Damage per Spectre you own\n
+Minions have ([0-9]{1,4})\% increased maximum Life\n
+([0-9]{1,4})\% increased Skeleton Duration\n
+Minions deal ([0-9]{1,4})\% increased Damage\n
+Minions have ([0-9]{1,4})\% increased Movement Speed\n
+([0-9]{1,4})\% reduced Mana Cost of Minion Skills\n
+Minions have \+([0-9]{1,4})\% to all Elemental Resistances\n
+Minions have \+([0-9]{1,4}) to Armour\n
+
+
+//Totem mods
+([0-9]{1,4})\% increased Totem Placement speed\n
+
+
+
+//Flask mods
+([0-9]{1,4})\% increased Charges used\n
+([0-9]{1,4})\% increased Mana Recovery from Flasks\n
+
+
+
+//Trap mods
+([0-9]{1,4})\% increased Trap Throwing speed\n
+([0-9]{1,4})\% Chance for Traps to Trigger an additional time\n
+
+
+
+//Curse mods
+([0-9]{1,4})\% increased Curse Duration\n
+([0-9]{1,4})\% reduced Effect of your Curses\n
+
+
+//Map mods
+([0-9]{1,4})\% more Magic Monsters\n
+([0-9]{1,4})\% more Rare Monsters\n
+Item Quantity\: \+([0-9]{1,4})\%\n
+Item Rarity\: \+([0-9]{1,4})\%\n
+([0-9]{1,4})\% more Monster Life\n
+([0-9]{1,4})\% increased Monster Damage\n
+Unique Boss drops ([0-9]{1,4}) additional Rare
+
+
+//IIR IIQ mods
+([0-9]{1,4})\% increased Quantity of Items found\n
+([0-9]{1,4})\% increased Rarity of Items found\n
+([0-9]{1,4})\% reduced Rarity of Items found\n
+([0-9]{1,4})\% reduced Quantity of Items found\n
+([0-9]{1,4})\% increased Rarity of Items found during Flask effect\n
+([0-9]{1,4})\% increased Quantity of Items found during Flask effect\n
+
+
+
+//Misc mods
+([0-9]{1,4})\% increased Physical Damage taken\n
+([0-9]{1,4})\% increased Movement Speed\n
+([0-9]{1,4})\% increased Light Radius\n
+(\-[0-9]{1,4}) Physical Damage taken from Projectile Attacks\n
+Regenerate ([0-9]{1,4}) Life over 1 second when you Cast a Spell\n
+([0-9]{1,4})\% increased Damage with Poison if you have at least 300 Dexterity\n
+([0-9]{1,4})\% increased Poison Duration if you have at least 150 Intelligence
+\+([0-9]{1,4})\% to Fire Resistance when Socketed with a Red Gem\n
+\+([0-9]{1,4})\% to Cold Resistance when Socketed with a Green Gem\n
+\+([0-9]{1,4})\% to Lightning Resistance when Socketed with a Blue Gem\n
+During Flask Effect, Damage Penetrates \+([0-9]{1,4})\% Resistance of each Element for which your Uncapped Elemental Resistance is highest\n
+Reflects ([0-9]{1,4}) Cold Damage to Melee Attackers\n
+Reflects ([0-9]{1,4}) to ([0-9]{1,4}) Lightning Damage to Attackers on Block\n
+(\-[0-9]{1,4}) Physical Damage taken from Attacks\n
+(\-[0-9]{1,4}) to Total Mana Cost of Skills\n
+Reflects ([0-9]{1,4}) Physical Damage to Melee Attackers
