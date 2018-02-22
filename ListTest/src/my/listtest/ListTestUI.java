@@ -174,7 +174,7 @@ public class ListTestUI extends javax.swing.JFrame {
         }*/
         
         
-        jTextField1.setText(String.valueOf(wanderlust.perfection));
+        jTextField1.setText(String.valueOf(wanderlust.getPerfection()));
         
         
         

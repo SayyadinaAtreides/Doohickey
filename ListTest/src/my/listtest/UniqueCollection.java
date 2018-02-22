@@ -21,14 +21,71 @@ import java.util.regex.Pattern;
  * @author Gebruiker
  */
 public class UniqueCollection {
-    ArrayList<Item> uniques;
-    String uniqueName;
-    float[][] modRanges;
-    Item bestItem;
-    float[] bestValues;
-    float perfection;
-    Image itemImage;
-    ArrayList<String> regexList;
+    private ArrayList<Item> Uniques;
+    private String UniqueName;
+    private float[][] ModRanges;
+    private Item BestItem;
+    private float[] BestValues;
+    private float Perfection;
+    private Image ItemImage;
+    private ArrayList<String> RegexList;
+    
+    
+    public void setUniques(ArrayList<Item> UniquesIn){
+        Uniques = UniquesIn;
+    }
+    public ArrayList<Item> getUniques(){
+        return Uniques;
+    }
+    
+    public void setUniqueName(String NameIn){
+        UniqueName = NameIn;
+    }
+    public String getUniqueName(){
+        return UniqueName;
+    }
+    
+    public void setModRanger(float[][] ModRangesIn){
+        ModRanges = ModRangesIn;
+    }
+    public float[][] getModRanges(){
+        return ModRanges;
+    }
+    
+    public void setBestItem(Item BestItemIn){
+        BestItem = BestItemIn;
+    }
+    public Item getBestItem(){
+        return BestItem;
+    }
+    
+    public void setBestValues(float[] BestValuesIn){
+        BestValues = BestValuesIn;
+    }
+    public float[] getBestValues(){
+        return BestValues;
+    }
+    
+    public void setPerfection(float PerfectionIn){
+        Perfection = PerfectionIn;
+    }
+    public float getPerfection(){
+        return Perfection;
+    }
+    
+    public void setItemImage(Image ItemImageIn){
+        ItemImage = ItemImageIn;
+    }
+    public Image getItemImage(){
+        return ItemImage;
+    }
+    
+    public void setRegexList(ArrayList<String> RegexListIn){
+        RegexList = RegexListIn;
+    }
+    public ArrayList<String> getRegexList(){
+        return RegexList;
+    }
     
     
     
@@ -37,27 +94,27 @@ public class UniqueCollection {
     
     
     public UniqueCollection(String uniqueNameIn, float[][] modRangesIn){
-        uniques = new ArrayList<Item>();
-        bestItem = null;
-        bestValues = new float[modRangesIn.length];
-        perfection = 0f;
+        Uniques = new ArrayList<Item>();
+        BestItem = null;
+        BestValues = new float[modRangesIn.length];
+        Perfection = 0f;
         
-        uniqueName = uniqueNameIn;
-        modRanges = modRangesIn;
+        UniqueName = uniqueNameIn;
+        ModRanges = modRangesIn;
         
-        getRegexList(uniqueName);
+        getRegexList(UniqueName);
         
     }
     
     public void addItem(String itemText){
         float[] modValues = extractModValues(itemText);
 
-        Item itemIn = new Item(uniqueName,"1.0",modValues);
+        Item itemIn = new Item(UniqueName,"1.0",modValues);
 
         //add unique
-        uniques.add(itemIn);
+        Uniques.add(itemIn);
         //calculate perfection of item
-        itemIn.itemPerfection = perfection(itemIn);
+        itemIn.setItemPerfection(perfection(itemIn));
         //calculate new perfection of uniquecollection
         compareBest(itemIn);
         
@@ -68,46 +125,46 @@ public class UniqueCollection {
     public void compareBest(Item itemToCompare){
         
         //if there is no best item yet (i.e., is first item)
-        if (bestItem==null){
-            bestItem = itemToCompare;
-            bestValues = itemToCompare.modValues;
-            perfection = itemToCompare.itemPerfection;
+        if (BestItem==null){
+            BestItem = itemToCompare;
+            BestValues = itemToCompare.getModValues();
+            Perfection = itemToCompare.getItemPerfection();
         }
         //if new item is better than old best item
-        else if (itemToCompare.itemPerfection > bestItem.itemPerfection){
-            bestItem = itemToCompare;
-            bestValues = itemToCompare.modValues;
-            perfection = itemToCompare.itemPerfection;
+        else if (itemToCompare.getItemPerfection() > BestItem.getItemPerfection()){
+            BestItem = itemToCompare;
+            BestValues = itemToCompare.getModValues();
+            Perfection = itemToCompare.getItemPerfection();
         }
                    
         
     }
     
-    public float perfection(Item itemIn){
-        float[] itemMods = itemIn.modValues;
-        float[] percents = new float[itemMods.length];
-        float percentsum = 0f;
+    public float perfection(Item ItemIn){
+        float[] ItemMods = ItemIn.getModValues();
+        float[] Percents = new float[ItemMods.length];
+        float Percentsum = 0f;
         
-        for (int i=0;i<itemMods.length;i++){
-            percents[i] = (itemMods[i]-modRanges[i][0])/(modRanges[i][1]-modRanges[i][0]);
-            percentsum+=percents[i];
+        for (int i=0;i<ItemMods.length;i++){
+            Percents[i] = (ItemMods[i]-ModRanges[i][0])/(ModRanges[i][1]-ModRanges[i][0]);
+            Percentsum+=Percents[i];
             //System.out.print(String.valueOf(percentsum));
         }
-        return percentsum/percents.length;
+        return Percentsum/Percents.length;
         
         
     }
     
     
     public void getRegexList(String uniqueName){
-        regexList = new ArrayList<String>();
+        RegexList = new ArrayList<String>();
         
         BufferedReader in = null;
                    
         try {
-            in = new BufferedReader(new FileReader("D:\\Users\\Pim\\Mijn Documenten\\PoE Unique Database\\Test Stuff\\"+uniqueName+".txt"));
+            in = new BufferedReader(new FileReader(System.getProperty("user.dir")+"\\suppfiles\\"+uniqueName+".txt"));
         } catch (FileNotFoundException ex) {
-            System.out.print("Unique regex file not found! "+uniqueName);
+            System.out.print("Unique regex file for "+uniqueName+" not found! Check your spelling!");
             return;
         }
         
@@ -115,25 +172,25 @@ public class UniqueCollection {
         try {
             while((line = in.readLine()) != null){
                 System.out.println(line);
-                regexList.add(line);
+                RegexList.add(line);
             }
         } catch (IOException ex) {
-            Logger.getLogger(UniqueCollection.class.getName()).log(Level.SEVERE, null, ex);
+            
         }
         try {
             in.close();
         } catch (IOException ex) {
-            Logger.getLogger(UniqueCollection.class.getName()).log(Level.SEVERE, null, ex);
+            
         }
         
     }
     
     
     public float[] extractModValues(String itemTextIn){
-        float[] modValues = new float[regexList.size()];
+        float[] modValues = new float[RegexList.size()];
         int j = 0;
-        for (int i=0; i<regexList.size(); i++){
-            String regexStr = regexList.get(i);
+        for (int i=0; i<RegexList.size(); i++){
+            String regexStr = RegexList.get(i);
             if (regexStr.equals("")){
                 continue;
             }
