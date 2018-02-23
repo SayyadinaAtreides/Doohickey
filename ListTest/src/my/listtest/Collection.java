@@ -91,6 +91,11 @@ public class Collection {
     
     public Collection(String NameIn, String LeagueIn, String VersionIn){
         
+        Name = NameIn;
+        League = LeagueIn;
+        Version = VersionIn;
+        
+        InitializeCollection();
         
         
         
@@ -98,5 +103,13 @@ public class Collection {
         
     }
     
+    
+    
+    
+    
+    
+    private void InitializeCollection(){
+        
+    }
     
 }
