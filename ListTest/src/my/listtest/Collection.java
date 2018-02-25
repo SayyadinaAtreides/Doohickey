@@ -12,103 +12,80 @@ import java.util.ArrayList;
  * @author Gebruiker
  */
 public class Collection {
-    private String Name;
-    private String League;
-    private String Version;
-    private float Perfection;
-    private int CollectionSize;
-    private int MaxCollectionSize;
-    private ArrayList<UniqueCollection> UniquesList;
-    private boolean IncludeLegacy;
-    private boolean IncludeRare;
+    private String myName;
+    private String myLeague;
+    private String myVersion;
+    private float myPerfection;
+    private int myMaxSize;
+    private ArrayList<UniqueCollection> myUniques;
+    private boolean includeLegacy;
+    private boolean includeDifficult;
     
+              
+    public Collection(String name, String league, String version){
+        
+        myName = name;
+        myLeague = league;
+        myVersion = version;
+        
+        initializeCollection();       
+        
+    }
     
-    public void setName(String NameIn){
-        Name = NameIn;
+    public void setName(String name){
+        myName = name;
     }
     public String getName(){
-        return Name;
+        return myName;
     }
     
-    public void setLeague(String LeagueIn){
-        League = LeagueIn;
+    public void setLeague(String league){
+        myLeague = league;
     }
     public String getLeague(){
-        return League;
+        return myLeague;
     }
     
-    public void setVersion(String VersionIn){
-        Version = VersionIn;
+    public void setVersion(String version){
+        myVersion = version;
     }
     public String getVersion(){
-        return Version;
+        return myVersion;
     }
     
-    public void setPerfection(float PerfectionIn){
-        Perfection = PerfectionIn;
-    }
     public float getPerfection(){
-        return Perfection;
+        return myPerfection;
     }
-    
-    public void setCollectionSize(int SizeIn){
-        CollectionSize = SizeIn;
-    }
-    public int getCollectionSize(){
-        return CollectionSize;
-    }
-    
-    public void setMaxCollectionSize(int MaxSize){
-        MaxCollectionSize = MaxSize;
+        
+    public void setMaxCollectionSize(int maxSize){
+        myMaxSize = maxSize;
     }
     public int getMaxCollectionSize(){
-        return MaxCollectionSize;
+        return myMaxSize;
     }
     
-    public void setUniquesList(ArrayList<UniqueCollection> UniquesListIn){
-        UniquesList = UniquesListIn;
+    public void setUniquesList(ArrayList<UniqueCollection> uniques){
+        myUniques = uniques;
     }
     public ArrayList<UniqueCollection> getUniquesList(){
-        return UniquesList;
+        return myUniques;
     }
     
-    public void setIncludeLegacy(boolean IncludeLegacyIn){
-        IncludeLegacy = IncludeLegacyIn;
+    public void setIncludeLegacy(boolean incLegacy){
+        includeLegacy = incLegacy;
     }
     public boolean getIncludeLegacy(){
-        return IncludeLegacy;
+        return includeLegacy;
     }
     
-    public void setIncludeRare(boolean IncludeRareIn){
-        IncludeRare = IncludeRareIn;
+    public void setIncludeDifficult(boolean incDifficult){
+        includeDifficult = incDifficult;
     }
     public boolean getIncludeRare(){
-        return IncludeRare;
-    }
+        return includeDifficult;
+    }   
     
-    
-    
-    
-    public Collection(String NameIn, String LeagueIn, String VersionIn){
-        
-        Name = NameIn;
-        League = LeagueIn;
-        Version = VersionIn;
-        
-        InitializeCollection();
-        
-        
-        
-        
-        
-    }
-    
-    
-    
-    
-    
-    
-    private void InitializeCollection(){
+    private void initializeCollection(){
         
     }
     
